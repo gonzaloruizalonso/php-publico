@@ -1,0 +1,28 @@
+:root{
+  background-color: #293462;
+}
+caption{font-size: 0.8em;}
+.centrado{
+  margin: 0 auto;
+  background-color: #216583;
+  border: 10pt solid #00818a;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  margin: 50px;
+  color:#f7be16;
+  font-family: Arial;
+  font-size: 1.2em;
+}
+.jugador{
+  float: left;
+  background-color:#00818a;
+  border: 10pt solid  #216583;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 50px;
+  width: 20%;
+  color:#f7be16;
+  font-family: Arial;
+  font-size: 1.2em;
+}
