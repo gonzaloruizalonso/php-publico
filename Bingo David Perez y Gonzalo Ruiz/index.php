@@ -8,6 +8,7 @@ echo "
     <link rel=\"stylesheet\" href=\"./css/estilos.css\">
   </head>
   <body>
+  <h1>HOLAAA</h1>
 ";
     //Creamos el array mas importante del ejercicio, un array que va a ser tridimensional
     //y que va a contener 4 jugadores, en cada jugador habra 3 cartones y cada carton 15 numeros
