@@ -41,13 +41,13 @@ if (!isset($_POST) || empty($_POST)) {
     $idcat=stripslashes(htmlspecialchars(trim($_REQUEST['idcategoria'])));
     $nomcat=stripslashes(htmlspecialchars(trim($_REQUEST['nombre'])));
 
-    $sqlprevio = "SELECT nombre as n FROM categoria WHERE nombre='$nomcat' ";
+    $sqlprevio = "SELECT NOMBRE as n FROM CATEGORIA WHERE NOMBRE='$nomcat' ";
     $result = mysqli_query($conn, $sqlprevio);
     $fila = mysqli_fetch_assoc($result);
     $nomcatAux = $fila['n'];
     if (mysqli_query($conn, $sqlprevio)) {
       if ($nomcat!=$nomcatAux) {
-        $sqlprevio2 = "SELECT ID_CATEGORIA as i FROM categoria WHERE ID_CATEGORIA='$idcat' ";
+        $sqlprevio2 = "SELECT ID_CATEGORIA as i FROM CATEGORIA WHERE ID_CATEGORIA='$idcat' ";
         $result = mysqli_query($conn, $sqlprevio2);
         $fila = mysqli_fetch_assoc($result);
         $idAux = $fila['i'];
