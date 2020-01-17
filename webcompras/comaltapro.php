@@ -58,7 +58,7 @@ if (!isset($_POST) || empty($_POST)) {
   $idcat = $fila['ID_CATEGORIA'];
   if (mysqli_query($conn, $sqlprevio)) {
     //-----------
-    $sqlprevio1 = "SELECT nombre as n FROM producto WHERE nombre='$nomprod' ";
+    $sqlprevio1 = "SELECT NOMBRE as n FROM producto WHERE NOMBRE='$nomprod' ";
     $result = mysqli_query($conn, $sqlprevio1);
     $fila = mysqli_fetch_assoc($result);
     $nomprodAux = $fila['n'];
@@ -106,7 +106,7 @@ if (!isset($_POST) || empty($_POST)) {
 // Funciones utilizadas en el programa
 function obtenerCategorias($db) {
 	$categorias = array();
-	$sql = "SELECT nombre FROM categoria";
+	$sql = "SELECT NOMBRE FROM CATEGORIA";
 	$resultado = mysqli_query($db, $sql);
 	if ($resultado) {
 		while ($row = mysqli_fetch_assoc($resultado)) {
