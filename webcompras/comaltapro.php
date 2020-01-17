@@ -58,7 +58,7 @@ if (!isset($_POST) || empty($_POST)) {
   $idcat = $fila['ID_CATEGORIA'];
   if (mysqli_query($conn, $sqlprevio)) {
     //-----------
-    $sqlprevio1 = "SELECT NOMBRE as n FROM producto WHERE NOMBRE='$nomprod' ";
+    $sqlprevio1 = "SELECT NOMBRE as n FROM PRODUCTO WHERE NOMBRE='$nomprod' ";
     $result = mysqli_query($conn, $sqlprevio1);
     $fila = mysqli_fetch_assoc($result);
     $nomprodAux = $fila['n'];
